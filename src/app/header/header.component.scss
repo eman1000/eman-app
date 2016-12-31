@@ -1,0 +1,24 @@
+.logo{
+	position: absolute;
+	width: 20rem;
+	display: block;
+	margin-left: 2rem;
+	position: relative;
+	text-rendering: optimizeLegibility;
+	cursor: pointer;
+	h1{
+		font-size: 4.5rem;
+		color: #88714d;
+		text-transform: uppercase;
+	}
+	img{
+	    position: absolute;
+	    bottom: 0.7rem;
+	    right: 1rem;
+	    width: 3.5rem;
+	}
+	&:hover{
+		color:#88714d;
+	    text-decoration: line-through;
+	}
+}

@@ -1,0 +1,150 @@
+@charset "UTF-8";
+@font-face {
+	/* Urbano Regular */
+	font-family: 'Urbano';
+	src:url('./assets/fonts/urbano/urbano/Urbano-Regular-webfont.eot');
+	src: url('./assets/fonts/urbano/Urbano-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('./assets/fonts/urbano/Urbano-Regular-webfont.woff') format('woff'),
+		 url('./assets/fonts/urbano/Urbano-Regular-webfont.ttf') format('truetype'),
+		 url('./assets/fonts/urbano/Urbano-Regular-webfont.svg#UrbanoRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	/* Urbano Light */
+	font-family: 'Urbano';
+	src: url('./assets/fonts/urbano/Urbano-Light-webfont.eot');
+	src: url('./assets/fonts/urbano/Urbano-Light-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('./assets/fonts/urbano/Urbano-Light-webfont.woff') format('woff'),
+		 url('./assets/fonts/urbano/Urbano-Light-webfont.ttf') format('truetype'),
+		 url('./assets/fonts/urbano/Urbano-Light-webfont.svg#UrbanoLight') format('svg');
+	font-weight: 300;
+	font-style: normal;
+
+}
+@font-face {
+	/* Urbano Italic */
+	font-family: 'Urbano';
+	src: url('./assets/fonts/urbano/Urbano-Italic-webfont.eot');
+	src: url('./assets/fonts/urbano/Urbano-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('./assets/fonts/urbano/Urbano-Italic-webfont.woff') format('woff'),
+		 url('./assets/fonts/urbano/Urbano-Italic-webfont.ttf') format('truetype'),
+		 url('./assets/fonts/urbano/Urbano-Italic-webfont.svg#UrbanoItalic') format('svg');
+	font-weight: normal;
+	font-style: italic;
+
+}
+@font-face {
+	/* Urbano Bold */
+	font-family: 'Urbano';
+	src: url('./assets/fonts/urbano/Urbano-Bold-webfont.eot');
+	src: url('./assets/fonts/urbano/Urbano-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('./assets/fonts/urbano/Urbano-Bold-webfont.woff') format('woff'),
+		 url('./assets/fonts/urbano/Urbano-Bold-webfont.ttf') format('truetype'),
+		 url('./assets/fonts/urbano/Urbano-Bold-webfont.svg#UrbanoBold') format('svg');
+	font-weight: 700;
+	font-style: normal;
+
+}
+/***********************
+
+	Urbano Condensed
+
+***********************/
+@font-face {
+	font-family: 'Urbano Condensed';
+	src: url('./assets/fonts/urbano/Urbano-Cond-webfont.eot');
+	src: url('./assets/fonts/urbano/Urbano-Cond-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('./assets/fonts/urbano/Urbano-Cond-webfont.woff') format('woff'),
+		 url('./assets/fonts/urbano/Urbano-Cond-webfont.ttf') format('truetype'),
+		 url('./assets/fonts/urbano/Urbano-Cond-webfont.svg#UrbanoCondensed') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+@font-face {
+	/* Urbano Light Condensed */
+	font-family: 'Urbano Condensed';
+	src: url('./assets/fonts/urbano/Urbano-LightCond-webfont.eot');
+	src: url('./assets/fonts/urbano/Urbano-LightCond-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('./assets/fonts/urbano/Urbano-LightCond-webfont.woff') format('woff'),
+		 url('./assets/fonts/urbano/Urbano-LightCond-webfont.ttf') format('truetype'),
+		 url('./assets/fonts/urbano/Urbano-LightCond-webfont.svg#UrbanoLightCondensed') format('svg');
+	font-weight: 300;
+	font-style: normal;
+
+}
+@font-face {
+	/* Urbano Light Condensed Italic */
+	font-family: 'Urbano Condensed';
+	src: url('./assets/fonts/urbano/Urbano-LightCondItalic-webfont.eot');
+	src: url('./assets/fonts/urbano/Urbano-LightCondItalic-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('./assets/fonts/urbano/Urbano-LightCondItalic-webfont.woff') format('woff'),
+		 url('./assets/fonts/urbano/Urbano-LightCondItalic-webfont.ttf') format('truetype'),
+		 url('./assets/fonts/urbano/Urbano-LightCondItalic-webfont.svg#UrbanoLightCondensedItalic') format('svg');
+	font-weight: 300;
+	font-style: italic;
+
+}
+@font-face {
+	/* Urbano Condensed Bold */
+	font-family: 'Urbano Condensed';
+	src: url('./assets/fonts/urbano/Urbano-BoldCond-webfont.eot');
+	src: url('./assets/fonts/urbano/Urbano-BoldCond-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('./assets/fonts/urbano/Urbano-BoldCond-webfont.woff') format('woff'),
+		 url('./assets/fonts/urbano/Urbano-BoldCond-webfont.ttf') format('truetype'),
+		 url('./assets/fonts/urbano/Urbano-BoldCond-webfont.svg#UrbanoBoldCondensed') format('svg');
+	font-weight: 700;
+	font-style: normal;
+
+}
+
+/***********************
+
+	Urbano Extra Condensed
+
+***********************/
+@font-face {
+	font-family: 'Urbano Extra Condensed';
+	src: url('./assets/fonts/urbano/Urbano-ExtraCond-webfont.eot');
+	src: url('./assets/fonts/urbano/Urbano-ExtraCond-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('./assets/fonts/urbano/Urbano-ExtraCond-webfont.woff') format('woff'),
+		 url('./assets/fonts/urbano/Urbano-ExtraCond-webfont.ttf') format('truetype'),
+		 url('./assets/fonts/urbano/Urbano-ExtraCond-webfont.svg#UrbanoExtraCondensed') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+/***********************
+
+	Urbano Expanded
+
+***********************/
+@font-face {
+	font-family: 'Urbano Expanded';
+	src: url('./assets/fonts/urbano/Urbano-ExtraBoldExpanded-webfont.eot');
+	src: url('./assets/fonts/urbano/Urbano-ExtraBoldExpanded-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('./assets/fonts/urbano/Urbano-ExtraBoldExpanded-webfont.woff') format('woff'),
+		 url('./assets/fonts/urbano/Urbano-ExtraBoldExpanded-webfont.ttf') format('truetype'),
+		 url('./assets/fonts/urbano/Urbano-ExtraBoldExpanded-webfont.svg#UrbanoExtraBoldExpanded') format('svg');
+	font-weight: 900;
+	font-style: normal;
+
+}
+/***********************
+
+	Urbano Black
+
+***********************/
+@font-face {
+	font-family: 'Urbano Black';
+	src: url('./assets/fonts/urbano/urbano-black-webfont.eot');
+	src: url('./assets/fonts/urbano/urbano-black-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('./assets/fonts/urbano/urbano-black-webfont.woff') format('woff'),
+		 url('./assets/fonts/urbano/urbano-black-webfont.ttf') format('truetype'),
+		 url('./assets/fonts/urbano/urbano-black-webfont.svg#UrbanoBlackRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
