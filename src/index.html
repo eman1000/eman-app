@@ -14,5 +14,20 @@
   <app-root>Loading...</app-root>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="assets/js/fluid.js"></script>
+  <script src="assets/js/typed.js"></script>
+  <script>
+    $(function(){
+
+        $(".title").typed({
+            stringsElement: $('.typed-strings'),
+            typeSpeed: 30,
+            backDelay: 500,
+            loop: false,
+            contentType: 'html',
+            loopCount: false,
+        });
+
+    });
+</script>
 </body>
 </html>

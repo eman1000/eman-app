@@ -8,13 +8,23 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { routing } from './app.routing';
+import { MenuComponent } from './menu/menu.component';
+import { StrikethroughDirective } from './strikethrough.directive';
+import { WorkComponent } from './work/work.component';
+
+import { WorkService } from "./work.service";
+import { WorkItemComponent } from './work-item/work-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    MenuComponent,
+    StrikethroughDirective,
+    WorkComponent,
+    WorkItemComponent
   ],
   imports: [
     BrowserModule,
@@ -22,7 +32,7 @@ import { routing } from './app.routing';
     HttpModule,
     routing
   ],
-  providers: [],
+  providers: [WorkService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
