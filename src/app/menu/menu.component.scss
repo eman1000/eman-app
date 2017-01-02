@@ -1,0 +1,127 @@
+.overlay-menu{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 5;
+	background-color: #fff;
+	opacity: 0.9;
+	display: block;
+
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+	.menu-close{
+	    width: 80px;
+	    height: 80px;
+	    position: absolute;
+	    right: 20px;
+	    top: 20px;
+	    overflow: hidden;
+	    border: none;
+	    background: url(assets/icons/close.svg) no-repeat center center;
+	    text-indent: 200%;
+	    color: transparent;
+	    outline: none;
+	    z-index: 4;
+	}
+	.arrow{
+	    float: right;
+	    margin-top: 1.9rem;;
+	    content: "";
+	    width: 0;
+	    height: 0;
+	    border: 0.6rem solid transparent;
+	    border-left: 0.8rem solid #88714d;
+	    display: inline-block;
+
+	}
+	.number{
+		color: #88714d;
+		text-align: left;
+		float: left;
+		margin-left: 0.1rem;
+		font-family: "Ezra SIL SR";
+		direction:rtl;
+		text-align: right;
+	}
+	.strike-through{
+		&:after{
+			border-bottom: 0.1rem solid #88714d;
+			content: "";
+			left: 0;
+			margin-top: 0.1rem;
+			position: absolute;
+			right: 0;
+			top: 50%;
+			margin: auto;
+			width: 38.6rem;
+		}
+	}
+	nav{
+		font-size: 3.4rem;
+		font-family: "Urbano Extra Condensed",sans-serif;
+		text-align: center;
+		top:25%;
+		position: relative;
+		li{
+			display: block;
+			width: 40rem;
+			position: relative;
+			cursor: pointer;
+		}
+		ul{
+		    list-style: none;
+		    padding: 0;
+		    margin: 0 auto;
+		    display: inline-block;
+		    height: 100%;
+		    position: relative;
+		}
+		a{
+			text-decoration: none;
+			color: #88714d;
+		}
+	}
+	@media(max-width: 767px){
+		nav{
+			li{
+				width: 20rem;
+			}
+		}
+		.strike-through{
+			&:after{
+				width: 18.5rem;
+			}
+		}
+	}
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 0.9; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 0.9; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 0.9; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 0.9; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 0.9; }
+}

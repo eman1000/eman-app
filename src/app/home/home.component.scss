@@ -1,7 +1,90 @@
-.background{
+body{
+	
+}
+.background-image{
 	width: 100%;
 	height: 100%;
 	padding: 0;
 	margin: 0;
 	top: 0;
+	background: url(assets/img/me.jpg) no-repeat;
+	background-size: cover;
+	z-index: -1;
+	position: absolute;
+	content: "";
+}
+.top-content{
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    vertical-align: middle;
+    top: 40%;
+    opacity: 5;
+	.title{
+	    color: #fff;
+	    font-size: 9rem;
+	    text-align: center;
+	    opacity: 0.5;
+	    font-weight: 100;
+	    letter-spacing: 1rem;
+	}
+	.title-mobile{
+		font-size: 4rem;
+		color: #fff;
+		text-align: center;
+		opacity: 0.5;
+	}
+	.view-work{
+		text-align: center;
+		display: block;
+		width: 17rem;
+		position: relative;
+		margin: auto;
+		a{
+			color: #88714d;
+			font-size: 2.4rem;
+		}
+
+	}
+}
+.arrow{
+    float: right;
+    margin-top: 1.1rem;
+    content: "";
+    width: 0;
+    height: 0;
+    border: 0.6rem solid transparent;
+    border-left: 0.8rem solid #88714d;
+    display: inline-block;
+
+}
+.strike-through{
+	&:after{
+		border-bottom: 0.1rem solid #88714d;
+		content: "";
+		left: 0;
+		margin-top: 0.1rem;
+		position: absolute;
+		right: 0;
+		top: 50%;
+		margin: auto;
+		width: 15rem;
+	}
+}
+
+em{
+	font-family: "Urbano Extra Condensed",sans-serif;
+}
+.background-fluid{
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	top: 0;
+	opacity: 0.5;
+}
+@media(max-width: 767px){
+	.background-image{
+		background-position-x: -31rem;
+	}
 }
