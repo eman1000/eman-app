@@ -1,12 +1,12 @@
-<div class="col-md-4 work-item-wrapper" [ngStyle]="{'background-image': 'url(http://emmancipatemusemwa.com/img/trigon_brochure_full.jpg)'}">
+<div class="work-item-wrapper" [ngStyle]="{'background-image': 'url('+ workItem.projectImage + ')'}">
     <figure class="effect-layla">
         <div  class="box">
             <figcaption>
                 <div class="projectTitle">
-                    <h2>TITLE OF PROJECTHHH JJJJJJJJJJJJJ</h2>
+                    <h2>{{workItem.projectName}}</h2>
                 </div>
                 <div class="category">
-                    <span class="categoryTitle">CATEGORY <br>
+                    <span class="categoryTitle">{{workItem.category}} <br>
                         <hr/>
                     </span>
                     <span appStrikethrough class="viewProject"> 
