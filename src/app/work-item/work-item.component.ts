@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-work-item',
@@ -6,10 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./work-item.component.scss']
 })
 export class WorkItemComponent implements OnInit {
+	@Input() workItem;
+	constructor() { }
 
-  constructor() { }
-
-  ngOnInit() {
-  }
+	ngOnInit() {
+	}
 
 }
