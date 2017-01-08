@@ -14,6 +14,7 @@ import { WorkComponent } from './work/work.component';
 
 import { WorkService } from "./work.service";
 import { WorkItemComponent } from './work-item/work-item.component';
+import { WorkDetailsComponent } from './work-details/work-details.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { WorkItemComponent } from './work-item/work-item.component';
     MenuComponent,
     StrikethroughDirective,
     WorkComponent,
-    WorkItemComponent
+    WorkItemComponent,
+    WorkDetailsComponent
   ],
   imports: [
     BrowserModule,

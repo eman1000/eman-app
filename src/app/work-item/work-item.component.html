@@ -1,18 +1,20 @@
-<div class="work-item-wrapper" [ngStyle]="{'background-image': 'url('+ workItem.projectImage + ')'}">
+<div class="work-item-wrapper" [ngStyle]="{'background-image': 'url('+ workItem.project_image + ')'}">
     <figure class="effect-layla">
         <div  class="box">
             <figcaption>
                 <div class="projectTitle">
-                    <h2>{{workItem.projectName}}</h2>
+                    <h2>{{workItem.project_name}}</h2>
                 </div>
                 <div class="category">
                     <span class="categoryTitle">{{workItem.category}} <br>
                         <hr/>
                     </span>
+                    <a [routerLink]="['/details', workItem.id]">
                     <span appStrikethrough class="viewProject"> 
                         <hr/><br/>
                         VIEW PROJECT<i class="arrow"></i> 
                     </span>
+                    </a>
                 </div>
             </figcaption>
         </div>

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { WorkService } from "../work.service";
+
 @Component({
   selector: 'app-work',
   templateUrl: './work.component.html',
@@ -10,7 +11,9 @@ export class WorkComponent implements OnInit {
   constructor(private _httpService: WorkService) { }
 
   ngOnInit() {
+    this.onPageLoad();
   }
+  workData = [];
   getData:string;
   postData:string;
 
@@ -34,20 +37,21 @@ export class WorkComponent implements OnInit {
         className:"col-xs-5"
     }]
 
-  onTestGet(){
-  	this._httpService.getCurrentTime()
-  		.subscribe(
-  			data => this.getData = JSON.stringify(data),
-  			error => alert(error),
-  			() => console.log("Finished")
-		);
-  	}
-  	onTestPost(){
-  		this._httpService.postJSON()
-	 		.subscribe(
-	  			data => this.postData = JSON.stringify(data),
-	  			error => alert(error),
-	  			() => console.log("Finished")
-			);
-  	}
+    onPageLoad(){
+        this._httpService.getWorkItems()
+            .subscribe(
+            data => this.workData = data,
+            error => alert(error),
+            () => console.log("Finished")
+        );
+        console.log(this.workData)
+    }
+    onTestPost(){
+      this._httpService.postJSON()
+      .subscribe(
+          data => this.postData = JSON.stringify(data),
+          error => alert(error),
+          () => console.log("Finished")
+      );
+    }
 }

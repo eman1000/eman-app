@@ -1,4 +1,4 @@
-.work-wrapper{
+.detail-wrapper{
 	width: 100%;
 	height: 100vh;
 	.top-panel{
@@ -6,22 +6,24 @@
 		height: 40rem;
 		padding: 2rem;
 		text-align: center;
-		background: url(assets/img/fullscreen-work.jpg) no-repeat;
+		background-repeat: no-repeat;
 		background-size: cover;
+		background-position: fixed;
 		h1{
 			margin-top: 15rem;
-		    color: #fff;
+		    color: #88714d;
 		    font-size: 9rem;
 		    text-align: center;
-		    opacity: 0.5;
+		    opacity: 5;
 		    font-weight: 100;
 		    letter-spacing: 1rem;
 		}
  	}
- 	.work-holder{
+ 	.detail-holder{
  		padding: 0;
  		margin: 0;
  		width: 100%;
+ 		background-color: #fff;
  	}
 	.workItem{
 		padding: 0;
